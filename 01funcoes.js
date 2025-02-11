@@ -45,7 +45,7 @@ function porcentagem(valor, taxa){
 }
 
 //resolução porcentagem - função de seta
-porcentagem = (valor, taxa) =>{
+let porcentagem = (valor, taxa) =>{
     return valor * (taxa / 100);
 }
 
@@ -56,7 +56,7 @@ function compraPrazo(valor, taxa){
 }
 
 //resolução compra prazo - função de seta
-compraPrazo = (valor, taxa) =>{
+let compraPrazo = (valor, taxa) =>{
     return valor + (valor * taxa / 100);
 }
 
@@ -67,6 +67,6 @@ function compraVista(valor, taxa){
 }
 
 //resolução compra vista - função de seta
-compraVista = (valor, taxa) => {
+let compraVista = (valor, taxa) => {
     return valor - (valor * taxa / 100);
 }
