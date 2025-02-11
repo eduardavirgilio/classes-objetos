@@ -70,3 +70,6 @@ function compraVista(valor, taxa){
 let compraVista = (valor, taxa) => {
     return valor - (valor * taxa / 100);
 }
+
+// opção ultra mega comprimida
+let compraVista = (valor, taxa) => valor - (valor * taxa / 100);

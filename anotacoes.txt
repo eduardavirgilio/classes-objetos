@@ -12,3 +12,7 @@ let - permite alterar o valor da variavel
 
 const - não muda o elemento
 ex: const objeto = {} - vira um objeto que pode guardar variaveis, listas, funções e etc..
+
+instanciar é criar um objeto
+
+cod, cidade, ano de construcao e quant de cursos
