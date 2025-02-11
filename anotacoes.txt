@@ -1,0 +1,14 @@
+[] - array ou lista
+
+= - atribuir
+
+== - compara valor
+
+=== - '' '' tipo
+
+() - invocação função
+
+let - permite alterar o valor da variavel
+
+const - não muda o elemento
+ex: const objeto = {} - vira um objeto que pode guardar variaveis, listas, funções e etc..
