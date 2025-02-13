@@ -1,0 +1,15 @@
+##Exercício01
+
+Criar uma função que irá comparar a quantidade de cursos de uma escola. Utilizar o 
+construtor que foi criado na classe Senai. Cada escola nova oferece uma quantidade de 
+cursos. 
+
+
+##Exercício03 
+
+Exiba no console:
+
+01 - A escola A tem a mesma quantidade de cursos que a Escola B 
+02 - Escola A : x cursos vs Escola B x cursos.
+
+O console deverá exibir os dados organizados para facilitar a interpretação do usuário.

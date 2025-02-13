@@ -1,11 +1,9 @@
-// Classe é uma definição. Como um objeto deve ser. 
 class Senai {
+
     codigo;
     cidade;
     ano_construcao;
     quant_cursos;
-
-    // Dentro de uma classe não precisa da palavra function. 
 
     constructor(codigo, cidade, ano_construcao, quant_cursos) {
         this.codigo = codigo;
@@ -13,22 +11,40 @@ class Senai {
         this.ano_construcao = ano_construcao;
         this.quant_cursos = quant_cursos;
     }
+
     dadosEscola() {
-        console.log(`O código ${this.codigo} pertence a Escola SENAI de ${this.cidade}.`)
-        console.log(`A escola SENAI de ${this.cidade} foi construida em ${this.ano_construcao} e tem ${2025 - this.ano_construcao} anos.`)
+        console.log(`O código ${this.codigo} pertence à Escola SENAI de ${this.cidade}.`);
+        console.log(`A escola SENAI de ${this.cidade} foi construída em ${this.ano_construcao} e tem ${2025 - this.ano_construcao} anos.`);
+        console.log();
     }
 }
 
+// criando instâncias das escolas
+const escolaA = new Senai(603, 'Araraquara', 1989, 50);
+const escolaB = new Senai(145, 'São Carlos', 1998, 50);
 
-// Instância é uma ocorrência. Criação de um novo objeto, utilizando a palavra reservada NEW.
+// função para exibir um relatório único
+function relatorioGeral() {
+    console.log();
+    console.log('★ Relatório de Cadastro');
+    console.log();
+    escolaA.dadosEscola();
+    escolaB.dadosEscola();
 
-// Criando uma instância(uma nova escola)
-const escolaA = new Senai(603, 'Araraquara', 1989);
-const escolaB = new Senai(145, 'São Carlos', 1998);
+    console.log('★ Relatório sobre os Cursos');
+    console.log();
+    
+    if (escolaA.quant_cursos > escolaB.quant_cursos) { 
+        console.log(`A escola A de ${escolaA.cidade} possui mais cursos que a escola B de ${escolaB.cidade}.`);
+    } else if (escolaB.quant_cursos > escolaA.quant_cursos) {
+        console.log(`A escola B de ${escolaB.cidade} possui mais cursos que a escola A de ${escolaA.cidade}.`);
+    } else {
+        console.log(`As escola A de ${escolaA.cidade} e a B de ${escolaB.cidade} possuem a mesma quantidade de cursos.`);
+    }
 
-// Exbibindo dados da nova escola
-console.log();
-escolaA.dadosEscola();
-console.log();
-escolaB.dadosEscola();
+    console.log(`Escola A: ${escolaA.quant_cursos} cursos vs Escola B: ${escolaB.quant_cursos} cursos.`);
+}
+
+// chamando a função para exibir o relatório uma única vez
+relatorioGeral();
 console.log();
