@@ -8,10 +8,14 @@ console.log(novaData.getDay()); //mês
 
 console.log(novaData.getHours()); //hora
 
-setInterval(() => {
-    console.log(new Date().toLocaleTimeString()); //hora local e converte em uma string
-}, 1000); //obtem a cada 1 segundo
+//setInterval(() => {
+    //console.log(new Date().toLocaleTimeString()); //hora local e converte em uma string
+//}, 1000); //obtem a cada 1 segundo
 
 setInterval(() => {
-    
+
+    let  agora = new Date();
+
+   const dataHoraBrasilia = document.querySelector('.dataHoraBrasilia');
+   dataHoraBrasilia.innerHTML = `${agora}`
 })
