@@ -96,5 +96,7 @@ body {
     color: #333;
 }
 
-
+.resultado-comparacao {
+    display: none;
+}
 

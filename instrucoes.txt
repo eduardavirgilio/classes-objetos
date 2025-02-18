@@ -1,15 +1,26 @@
-##Exercício01
+Instruções:
 
-Criar uma função que irá comparar a quantidade de cursos de uma escola. Utilizar o 
-construtor que foi criado na classe Senai. Cada escola nova oferece uma quantidade de 
-cursos. 
+o O construtor deve calcular a idade da escola
+automaticamente utilizando o método calcularIdade.
+o Implemente o método dadosEscola que retorna uma string
+formatada com as informações da escola.
 
+2. Função compararEscolas:
+o Esta função deve receber dois objetos da classe Senai e
+comparar a quantidade de cursos de ambas as escolas.
+o O retorno dessa função deve ser uma string dizendo qual
+das escolas tem mais cursos, menos cursos ou se elas têm
+a mesma quantidade.
 
-##Exercício03 
+3. Função gerarRelatorio:
+o A função gerarRelatorio irá coletar os dados de duas escolas
+a partir de campos de entrada (inputs de um formulário).
+o Após coletar os dados, ela deve criar dois objetos da classe
+Senai, um para cada escola, e gerar o relatório completo.
+o O relatório deve incluir:
+▪ Dados de cada escola (código, cidade, ano de
+construção e idade).
+▪ Comparação entre as escolas (quantidade de cursos).
+o O relatório gerado deve ser exibido na tela em uma área
+específica (com a id relatorio).
 
-Exiba no console:
-
-01 - A escola A tem a mesma quantidade de cursos que a Escola B 
-02 - Escola A : x cursos vs Escola B x cursos.
-
-O console deverá exibir os dados organizados para facilitar a interpretação do usuário.

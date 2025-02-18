@@ -15,10 +15,10 @@
     <h2>Insira os dados das Escolas:</h2>
     </header>
 
-    <section class="secao-escola">
+    <section class="secao-escola" id="compararEscolas">
         
         <h2>Escola 1</h2>
-        <form class="frm-escola">
+        <form class="frm-escola" id="frm-escola">
             <label for="cod-escola">Código:</label>
             <input type="number" id="cod-escola" name="cod-escola" required step="1.00">
 
@@ -33,31 +33,31 @@
         </form>
     </section>
 
-    <section class="secao-escola">
+    <section class="secao-escola" id="compararEscolas">
         <h2>Escola 2</h2>
-        <form class="frm-escola">
+        <form class="frm-escola" id="frm-escola">
             <label for="cod-escola">Código:</label>
-            <input type="number" id="cod-escola" name="cod-escola" required step="1.00">
+            <input type="number" id="cod-escola-1" name="cod-escola" required step="1.00">
 
             <label for="nome-cidade">Cidade</label>
-            <input type="text" id="nome-cidade" name="nome-cidade">
+            <input type="text" id="nome-cidade-1" name="nome-cidade">
 
             <label for="ano-construcao">Ano de Construção:</label>
-            <input type="number" id="ano-construcao" name="ano-construcao" required step="1.00">
+            <input type="number" id="ano-construcao-1" name="ano-construcao" required step="1.00">
 
             <label for="qnt-cursos">Quantidade de Cursos:</label>
-            <input type="number" id="qnt-cursos" name="qnt-cursos" required step="1.00">
+            <input type="number" id="qnt-cursos-1" name="qnt-cursos" required step="1.00">
         </form>
     </section>
 
     <section class="btn-gerar-limpar">
-        <button type="submit" class="btn-relatorio">Gerar Relatório</button>
+        <button onclick="relatorio()">Gerar Relatório</button>
 
-        <button onclick="limpar()" class="btn-limpar">Limpar Relatório</button>
+        <button onclick="limparRelatorio()" id="btn-limpar">Limpar Relatório</button>
     </section>
 
     <section class="resultado-comparacao" id="resultado-comparacao">
-        <p><strong>#Relatorio Cadastro</strong>
+        <!-- <p><strong>#Relatorio Cadastro</strong>
         <br>
         <br>O código ${} pertence a Escola SENAI de ${}.
         <br>A escola SENAI de ${} foi construída em ${} e possui ${} anos.
@@ -65,15 +65,15 @@
         <br>O código ${} pertence a Escola SENAI de ${}.
         <br>A escola SENAI de ${} foi construída em ${} e possui ${} anos.
         <br>
-        <br><strong>#Fim do Relatório Cadastro</strong>
-        <br>---------------------------------------------------------------------------------------
+        <br><strong>#Fim do Relatório Cadastro</strong> -->
+        <!-- <br>---------------------------------------------------------------------------------------
         <br><strong>#Relatório de Cursos</strong>
         <br>
         <br>O SENAI de ${} tem menos cursos que o SENAI de ${}.
         <br>${}: ${} cursos vs ${}: ${} cursos.
         <br>
         <br><strong>#Fim Relatório de Cursos</strong>
-        </p>
+        </p> -->
     </section>
 
     <script src="./comparar.js"></script>
