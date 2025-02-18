@@ -14,8 +14,8 @@ console.log(novaData.getHours()); //hora
 
 setInterval(() => {
 
-    let  agora = new Date();
+    let  agora = new Date().toLocaleTimeString(); //sem o .toLocaleTimeString() aparece de tudo, com isso so mostra a hora
 
    const dataHoraBrasilia = document.querySelector('.dataHoraBrasilia');
    dataHoraBrasilia.innerHTML = `${agora}`
-})
+},1000)
